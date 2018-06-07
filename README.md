@@ -18,21 +18,37 @@ We thought it would be funny.
 
 It's electron, so you can run it as follows:
 
-- Download a built release for your OS (Coming soon...?)
-- [Build a release for your OS](https://electronjs.org/docs/tutorial/application-distribution)
-- Run it from a global electron install
-- Run it with development dependencies:
-    - Have [npm 5+](https://nodejs.org)
-    - Clone the repo
-    - `npm install`
-    - `npm start`
+- Download a built release for your OS from **Releases**
+- Build or run from source:
+    1. Have [npm 5+](https://nodejs.org)
+    1. Clone the repo
+    1. Choose a way to build or run:
+        - Build a release for your OS
+            - We use `electron-builder` to build releases, so you can too!
+            - It's a local dev dependency, so `npm install`
+            - [electron-builder](https://github.com/electron-userland/electron-builder)
+        - Run it from a global electron install
+            - `electron ./src`
+        - Run it with development dependencies:
+            1. `npm install`
+            1. `npm start`
+
+## Run on a schedule
+
+Use your favourite scheduled task runner.
+
+On Linux we do the following:
+
+- `crontab -e`
+- add cron task e.g.
+    - `00 15 * * * export DISPLAY=:0 && /opt/walkies/walkies`
 
 # Testing it
 
-- Have [npm 5+](https://nodejs.org)
-- Clone the repo
-- `npm install`
-- `npm test`
+1. Have [npm 5+](https://nodejs.org)
+1. Clone the repo
+1. `npm install`
+1. `npm test`
 
 # Licensing
 
