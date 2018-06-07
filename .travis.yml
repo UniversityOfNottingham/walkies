@@ -13,5 +13,6 @@ deploy:
   file_glob: true
   file: dist/*.tar.gz
   skip_cleanup: true
+  name: $TRAVIS_TAG
   on:
     tags: true
