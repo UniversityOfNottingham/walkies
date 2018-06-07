@@ -2,6 +2,7 @@
   "name": "walkies",
   "version": "1.0.0",
   "main": "./main/main.js",
+  "private": true,
   "config": {
     "timeoutMs": 120000,
     "directions": [

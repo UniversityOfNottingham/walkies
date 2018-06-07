@@ -1,13 +1,14 @@
 {
+  "private": true,
   "scripts": {
     "start": "electron ./src",
-    "test": "node ./node_modules/electron-mocha/bin/electron-mocha --renderer ./tests"
+    "test": "electron-mocha --renderer ./tests"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/UniversityOfNottingham/walkies"
   },
-  "author": "Jonathan Couldridge",
+  "author": "Jonathan Couldridge <jonathan.couldridge@nottingham.ac.uk>",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^8.2.2",
