@@ -1,0 +1,18 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js: "node"
+before_script:
+  - export DISPLAY=:99.0; sh -e /etc/init.d/xvfb start
+script:
+  - npm test
+  - npm run dist:linux
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file_glob: true
+  file: dist/*.tar.gz
+  skip_cleanup: true
+  name: $TRAVIS_TAG
+  on:
+    tags: true
