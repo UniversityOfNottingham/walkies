@@ -1,0 +1,57 @@
+@font-face {
+  font-family: ComicSansTTF;
+  src: url("font/comic.ttf");
+  font-weight: 400;
+}
+
+body {
+  font-family: ComicSansTTF;
+  text-shadow: 1px 1px 5px black;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("walkies.jpg") no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+h1 {
+  color: lime;
+  text-align: center;
+  font-size: 800%;
+}
+
+dl {
+  margin: auto;
+  text-align: center;
+  font-size: 600%;
+}
+
+dt {
+  color: Fuchsia;
+  font-weight: bold;
+  text-align: right;
+}
+
+dd {
+  color: orangered;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+dt,
+dd {
+  float: left;
+  width: 46%;
+}
+dt {
+  clear: both;
+}

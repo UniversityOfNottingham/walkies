@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "start": "electron ./src",
+    "test": "node ./node_modules/electron-mocha/bin/electron-mocha --renderer ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://UniversityOfNottingham@vs-ssh.visualstudio.com:22/ProductCentre.Main/_ssh/rpi.walkies"
+  },
+  "author": "Jonathan Couldridge",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "chai": "^4.1.2",
+    "electron": "^2.0.2",
+    "electron-mocha": "^6.0.2",
+    "eslint": "^4.18.1",
+    "husky": "^0.14.3",
+    "prettier": "^1.13.4",
+    "pretty-quick": "^1.6.0"
+  }
+}

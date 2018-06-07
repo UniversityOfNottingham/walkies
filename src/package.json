@@ -1,0 +1,20 @@
+{
+  "name": "walkies",
+  "version": "0.2.0",
+  "main": "./main/main.js",
+  "config": {
+    "timeoutMs": 120000,
+    "directions": [
+      "Clockwise",
+      "Anti-clockwise"
+    ],
+    "staircases": [
+      "Reception",
+      "Vending Machines",
+      "Canteen",
+      "Studio 11",
+      "Post Room",
+      "Transform"
+    ]
+  }
+}
