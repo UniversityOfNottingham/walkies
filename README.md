@@ -1,5 +1,7 @@
 # Walkies
 
+[![Build Status](https://travis-ci.org/UniversityOfNottingham/walkies.svg?branch=master)](https://travis-ci.org/UniversityOfNottingham/walkies)
+
 This is a tiny electron app that displays full screen and then quits after a timeout.
 
 We use it at UoN to randomise the route for our afternoon walk.
