@@ -1,0 +1,6 @@
+sudo: required
+dist: trusty
+language: node_js
+script:
+  - npm test
+  - npm run dist:linux
